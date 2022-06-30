@@ -4,6 +4,6 @@
 
 body {
   @apply bg-blue-200 text-gray-100 scroll-smooth;
- 
+
   -webkit-font-smothing: antialiased;
 }

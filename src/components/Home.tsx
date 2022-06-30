@@ -3,28 +3,34 @@
 export function Home() {
   return (
     <section id="home">
-      <div className="pt-20 pl-[124px] " id="wrapper">
+      <div className="pt-20 pl-[7.75rem] " id="wrapper">
         <div id="col-a">
+          
       <header >
             <h4
-            className="text-blue-700 font-bold"
+            className="text-blue-700 font-bold text-left text-[0.875rem] leading-snug w-[600px] tracking-wide"
             >BOAS-VINDAS AO INSTITUTO SAIGRENE 👋</h4>
             <h1
-            className="text-gray-900 font-bold mt-3 text-5xl w-[800px] leading-releaxed "
+            className="text-gray-900 font-bold mt-3 text-[3.1rem] w-[800px] leading-releaxed text-left"
             >Assistência psicologica simplificada para todos</h1>
           </header>
           </div>
       </div>
 
-      <div id="content">
+      <div 
+      id="content"
+      className="mt-4 text-gray-700 font-normal text-lg pl-[7.75rem] leading-releaxed w-[800px]"
+      >
             <p>
               Os psicologos vão além dos sintomas para tratar a causa raiz de
               sua doença e proporcionar uma cura a longo prazo.
             </p>
-            <a href="#">
+            <a 
+            href="#"
+            className="bg-blue-700 text-white rounded-full px-8 py-[1rem] flex justify-between w-[300px] items-center mt-8">
             <svg
-                width="20"
-                height="20"
+                width="25"
+                height="23"
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -35,10 +41,9 @@ export function Home() {
                   fill="white"
                 />
               </svg>
-              Agende sua consulta
+              AGENDE SUA CONSULTA
               </a>
-              
-      </div>
+              </div>
     </section>
 
   )
