@@ -1,5 +1,5 @@
 export function About() {
   return (
-    <h1>about</h1>
+    <h1 className="bg-blue-900">Qualquer coisa </h1>
     )
 }
