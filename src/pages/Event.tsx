@@ -1,4 +1,5 @@
 import { About } from "../components/About";
+import { Banner } from "../components/Banner";
 import { Contact } from "../components/Contact";
 import { Depoiments } from "../components/Depoiments";
 import { Home } from "../components/Home";
@@ -13,6 +14,7 @@ export function Event () {
         <Home />
         <Services />
         <Depoiments />
+        <Banner />
         <About />
         <Contact />
         </div>

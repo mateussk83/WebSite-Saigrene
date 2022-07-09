@@ -9,7 +9,7 @@ export function Home() {
             className="text-blue-700 font-bold text-left text-[0.875rem] leading-snug w-[37.5rem] tracking-wide"
           >BOAS-VINDAS AO INSTITUTO SAIGRENE 👋</h4>
           <h1
-            className="text-gray-900 font-bold mt-3 text-[3.1rem] w-[37.5rem] leading-releaxed text-left"
+            className="text-gray-900 font-bold mt-3 text-[3.1rem] w-[37.5rem] leading-[67.6px] text-left"
           >Assistência psicologica simplificada para todos</h1>
 
           <div
