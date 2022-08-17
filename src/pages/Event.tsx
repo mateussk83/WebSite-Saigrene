@@ -2,6 +2,7 @@ import { About } from "../components/About";
 import { Banner } from "../components/Banner";
 import { Contact } from "../components/Contact";
 import { Depoiments } from "../components/Depoiments";
+import { Footer } from "../components/Footer";
 import { Home } from "../components/Home";
 import { Navigation } from "../components/Navigation";
 import { Services } from "../components/Services";
@@ -17,6 +18,7 @@ export function Event () {
         <Banner />
         <About />
         <Contact />
+        <Footer />
         </div>
   )
 }
