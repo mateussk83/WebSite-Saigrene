@@ -1,10 +1,11 @@
 import { Person } from "phosphor-react";
-import { useParams } from "react-router-dom";
+import { useState } from "react";
 
 
 
 export function Depoiments() {
-
+  const [ pageDepoiment, setpageDepoiment ] = useState(0);
+  
   const depoiments = [
     {
       id: 1,
@@ -23,6 +24,10 @@ export function Depoiments() {
       }
     }
   ];
+
+
+
+console.log(pageDepoiment)
   return (
     <div className="bg-white pb-[14rem]">
       <header className="flex flex-col items-center">
@@ -50,9 +55,9 @@ export function Depoiments() {
 
       </div>
       <div className="flex items-center justify-center gap-2 mt-[3.125rem]">
-        <span className="h-4 w-4 bg-blue-200 rounded-full hover:bg-blue-700"></span>
-        <span className="h-4 w-4 bg-blue-200 rounded-full hover:bg-blue-700"></span>
-        <span className="h-4 w-4 bg-blue-200 rounded-full hover:bg-blue-700"></span>
+        <a className={`h-4 w-4  rounded-full hover:bg-blue-700 ${pageDepoiment == 0 ? 'bg-blue-700' : 'bg-blue-200'}`} onClick={() => {setpageDepoiment(0)}}></a>
+        <a className={`h-4 w-4  rounded-full hover:bg-blue-700 ${pageDepoiment == 1 ? 'bg-blue-700' : 'bg-blue-200'}`} onClick={() => {setpageDepoiment(1)}}></a>
+        <a className={`h-4 w-4  rounded-full hover:bg-blue-700 ${pageDepoiment == 2 ? "bg-blue-700" : 'bg-blue-200'}`} onClick={() => {setpageDepoiment(2)}}></a>
       </div>
     </div>
   )
