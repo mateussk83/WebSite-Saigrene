@@ -3,7 +3,7 @@ import { EnvelopeSimple, MapPin, WhatsappLogo } from "phosphor-react";
 
 export function Contact() {
   return (
-    <section id="home" className="justify-center flex items-center  gap-36 pt-[8rem] bg-white pb-[160px]">
+    <section id="Contact" className="justify-center flex items-center  gap-36 pt-[8rem] bg-white pb-[160px]">
       <div className="">
         
         <h1

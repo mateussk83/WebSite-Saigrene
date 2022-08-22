@@ -2,9 +2,9 @@ import { WhatsappLogo } from 'phosphor-react'
 
 export function Home() {
   return (
+        <header className="">
     <section id="home" className="bg-blue-300  justify-center flex items-center">
       <div className="pt-20 flex justify-center" id="wrapper">
-        <header className="">
           <h4
             className="text-blue-700 font-bold text-left text-[0.875rem] leading-snug w-[37.5rem] tracking-wide"
           >BOAS-VINDAS AO INSTITUTO SAIGRENE 👋</h4>
@@ -27,7 +27,6 @@ export function Home() {
               Agende sua Consulta
             </a>
           </div>
-        </header>
       </div>
 
       <div id="col-b">
@@ -38,6 +37,6 @@ export function Home() {
         />
       </div>
     </section>
-
+        </header>
   )
 }

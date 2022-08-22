@@ -8,7 +8,7 @@ export function Depoiments() {
   
   const depoiments = [
     {
-      id: 1,
+      id: 0,
       comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem accusantium, similique ab delectus facere possimus, libero ut est sunt perferendis error deleniti. Nam iste numquam magni nisi porro distinctio quos.",
       patient: {
         avatarURL: "https://github.com/mateussk83.png",
@@ -16,8 +16,40 @@ export function Depoiments() {
       }
     },
     {
-      id: 2,
+      id: 1,
       comment: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. ",
+      patient: {
+        avatarURL: "https://github.com/mateussk83.png",
+        name: "Mateus Garcia"
+      }
+    },
+    {
+      id: 2,
+      comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem accusantium, similique ab delectus facere possimus, libero ut est sunt perferendis error deleniti. Nam iste numquam magni nisi porro distinctio quos.",
+      patient: {
+        avatarURL: "https://github.com/mateussk83.png",
+        name: "Mateus Garcia"
+      }
+    },
+    {
+      id: 3,
+      comment: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.",
+      patient: {
+        avatarURL: "https://github.com/mateussk83.png",
+        name: "Mateus Garcia"
+      }
+    },
+    {
+      id: 4,
+      comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem accusantium, similique ab delectus facere possimus, libero ut est sunt perferendis error deleniti. Nam iste numquam magni nisi porro distinctio quos.",
+      patient: {
+        avatarURL: "https://github.com/mateussk83.png",
+        name: "Mateus Garcia"
+      }
+    },
+    {
+      id: 5,
+      comment: "Amentdasdasdasd asd asd asd asd asd asd asd asd asd asd as dasd as dasd asd asd asd asd asd asd asd asd asd asd asd asd asd asd as dasd asd asd asd asd sdasd asd asd asd asdasd asd asd asd asd asd asd asd asd asd asd asd asd a ",
       patient: {
         avatarURL: "https://github.com/mateussk83.png",
         name: "Mateus Garcia"
@@ -38,18 +70,54 @@ console.log(pageDepoiment)
 
         {
           depoiments.map(depoiment => {
-            return (
-              <div className="bg-blue-200 p-8 border border-solid border-blue-200 rounded w-[544px] h-[273px]">
-                <Person size={35} color="#6848c8" className="mb-5" />
-                <p className="text-gray-700 my-5 h-24">{depoiment.comment}</p>
-                <div className="flex items-center text-blue-700 font-bold">
-                  <img
-                    className="w-[3rem] h-[3rem] rounded-full"
-                    src={depoiment.patient.avatarURL} />
-                  <h1 className="ml-4">{depoiment.patient.name}</h1>
-                </div>
-              </div>
-            )
+            if (pageDepoiment == 0) {
+              if (depoiment.id == 0 || depoiment.id == 1) {
+                return (
+                  <div className="bg-blue-200 p-8 border border-solid border-blue-200 rounded w-[544px] h-[273px]">
+                    <Person size={35} color="#6848c8" className="mb-5" />
+                    <p className="text-gray-700 my-5 h-24">{depoiment.comment}</p>
+                    <div className="flex items-center text-blue-700 font-bold">
+                      <img
+                        className="w-[3rem] h-[3rem] rounded-full"
+                        src={depoiment.patient.avatarURL} />
+                      <h1 className="ml-4">{depoiment.patient.name}</h1>
+                    </div>
+                  </div>
+                )
+              }
+            }
+            else if (pageDepoiment == 1) {
+              if (depoiment.id == 2 || depoiment.id == 3) {
+                return (
+                  <div className="bg-blue-200 p-8 border border-solid border-blue-200 rounded w-[544px] h-[273px]">
+                    <Person size={35} color="#6848c8" className="mb-5" />
+                    <p className="text-gray-700 my-5 h-24">{depoiment.comment}</p>
+                    <div className="flex items-center text-blue-700 font-bold">
+                      <img
+                        className="w-[3rem] h-[3rem] rounded-full"
+                        src={depoiment.patient.avatarURL} />
+                      <h1 className="ml-4">{depoiment.patient.name}</h1>
+                    </div>
+                  </div>
+                )
+              }
+            }
+            else if (pageDepoiment == 2) {
+              if (depoiment.id == 4 || depoiment.id == 5) {
+                return (
+                  <div className="bg-blue-200 p-8 border border-solid border-blue-200 rounded w-[544px] h-[273px]">
+                    <Person size={35} color="#6848c8" className="mb-5" />
+                    <p className="text-gray-700 my-5 h-24">{depoiment.comment}</p>
+                    <div className="flex items-center text-blue-700 font-bold">
+                      <img
+                        className="w-[3rem] h-[3rem] rounded-full"
+                        src={depoiment.patient.avatarURL} />
+                      <h1 className="ml-4">{depoiment.patient.name}</h1>
+                    </div>
+                  </div>
+                )
+              }
+            }
           })
         }
 
