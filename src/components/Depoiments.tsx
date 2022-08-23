@@ -123,9 +123,9 @@ console.log(pageDepoiment)
 
       </div>
       <div className="flex items-center justify-center gap-2 mt-[3.125rem]">
-        <a className={`h-4 w-4  rounded-full hover:bg-blue-700 ${pageDepoiment == 0 ? 'bg-blue-700' : 'bg-blue-200'}`} onClick={() => {setpageDepoiment(0)}}></a>
-        <a className={`h-4 w-4  rounded-full hover:bg-blue-700 ${pageDepoiment == 1 ? 'bg-blue-700' : 'bg-blue-200'}`} onClick={() => {setpageDepoiment(1)}}></a>
-        <a className={`h-4 w-4  rounded-full hover:bg-blue-700 ${pageDepoiment == 2 ? "bg-blue-700" : 'bg-blue-200'}`} onClick={() => {setpageDepoiment(2)}}></a>
+        <a className={`h-4 w-4  rounded-full duration-200 hover:bg-blue-700 ${pageDepoiment == 0 ? 'bg-blue-700' : 'bg-blue-200'}`} onClick={() => {setpageDepoiment(0)}}></a>
+        <a className={`h-4 w-4  rounded-full duration-200 hover:bg-blue-700 ${pageDepoiment == 1 ? 'bg-blue-700' : 'bg-blue-200'}`} onClick={() => {setpageDepoiment(1)}}></a>
+        <a className={`h-4 w-4  rounded-full duration-200 hover:bg-blue-700 ${pageDepoiment == 2 ? "bg-blue-700" : 'bg-blue-200'}`} onClick={() => {setpageDepoiment(2)}}></a>
       </div>
     </div>
   )

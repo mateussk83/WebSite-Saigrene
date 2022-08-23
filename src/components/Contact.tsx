@@ -19,7 +19,7 @@ export function Contact() {
 
           <a
             href="#"
-            className="bg-blue-700 uppercase font-bold gap-[0.75rem] text-white rounded-full text-sm py-[1rem] flex justify-center w-[250px] items-center mt-10">
+            className="bg-blue-700 uppercase font-bold gap-[0.75rem] text-white rounded-full text-sm py-[1rem] flex justify-center w-[250px] items-center mt-10 duration-200 hover:bg-blue-900">
             <WhatsappLogo size={25} weight="light"/>
             Agende sua Consulta
           </a>

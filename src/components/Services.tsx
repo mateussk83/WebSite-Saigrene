@@ -7,7 +7,7 @@ export function Services() {
         <h4 className="text-[0.875rem] leading-snug text-blue-700 tracking-wide font-bold pt-[8rem]">SERVIÇOS</h4>
         <h1 className="text-gray-900 font-bold mt-3 text-[2.5rem] w-[37.5rem] leading-[52.08px] text-center" >Como podemos ajudá-lo a se sentir melhor?</h1>
       </header>
-      <div id="cards" className="flex text-left justify-center gap-10 mt-[4rem]">
+      <div id="cards" className="flex text-left justify-center gap-10 mt-[4rem] ">
         <div id="col-1" className="flex flex-col gap-10">
         <div
           className=" w-[347px] h-[207px] border border-solid rounded-md bg-white p-6">
