@@ -1,22 +1,9 @@
 import { useState } from "react";
 import { Logo } from "./Logo";
 
-const scrollHandler = (event: React.UIEvent<HTMLDivElement>) => {
-
-  const containerHeight = event.currentTarget.clientHeight;
-  const scrollHeight = event.currentTarget.scrollHeight;
-
-  const scrollTop = event.currentTarget.scrollTop;
-  return (
-    console.log(scrollHeight, scrollTop)
-  )
-};
-
 export function Navigation() {
 
-
-  return (
-
+ return (
     <header className={` w-full py-2 flex items-center justify-between bg-blue-700 border-b `} >
       <div className="py-[1.65rem] pl-[7.75rem] text-white click:bb-1">
         <a href="#Home">

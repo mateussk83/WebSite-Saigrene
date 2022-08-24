@@ -19,9 +19,9 @@ export function About() {
         
         <div className="md:items-center md:text-center flex flex-col">
         <h1
-          className="text-gray-900 font-bold mt-3 text-[2.5rem] w-[24.5rem] leading-[52.08px] md:text-center"
+          className="text-gray-900 font-bold mt-3 text-[2.5rem] w-[30.5rem] md:w-[24.5rem] leading-[52.08px] md:text-center"
         >Entenda quem somos e por que existimos</h1>
-          <span className="mt-4 text-gray-700 font-normal text-lg leading-releaxed w-[24.5rem] ">
+          <span className="mt-4 text-gray-700 font-normal text-lg leading-releaxed w-[37.5rem] md:w-[24.5rem] ">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi voluptatibus rerum officiis, provident reiciendis laboriosam laborum eos voluptatum autem dolorem atque tempora. Ad corporis et aut minima! Quo, reiciendis ipsum.
             lorem
           </span>
