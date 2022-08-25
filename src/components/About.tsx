@@ -1,4 +1,4 @@
-import { WhatsappLogo } from "phosphor-react";
+import { ArrowUp, WhatsappLogo } from "phosphor-react";
 import { Element } from "react-scroll";
 
 export function About() {
@@ -36,6 +36,8 @@ export function About() {
           </div>
       </div>
       </div>
+
+      
     </section>
     </Element>
   )

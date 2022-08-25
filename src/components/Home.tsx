@@ -1,28 +1,35 @@
 import { WhatsappLogo } from 'phosphor-react'
-import { Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Element, animateScroll as scroll } from 'react-scroll'
 
 export function Home() {
   return (
     <Element
-    name="service"
+    name="inicio"
     >
-     <section id="home" className="bg-blue-300 justify-center flex items-center md:flex-col ">
-        
-      <div className="pt-20 flex justify-center" id="wrapper">
+     <section id="home" className="mt-[-2rem] bg-blue-300 justify-center flex items-center md:flex-col md:mt-0 ">
+     <div id="col-a">
+       
+       <img
+        className="w-[27rem] w-[85%] h-[50%] md:w-[80%] md:ml-4 mt-[7.5rem] md:hidden"
+         src="./src/assets/denise.png"
+         alt="Erica Luciana Garcia"
+       />      
+     </div>
+      <div className=" flex justify-center items-center" id="wrapper">
         <header>
           <h4
-            className="text-blue-700 font-bold text-left text-[0.875rem] leading-snug w-[37.5rem] tracking-wide md:text-center"
+            className="text-blue-700 font-bold text-center text-[0.875rem] leading-snug w-[37.5rem] tracking-wide"
           >BOAS-VINDAS AO INSTITUTO SAIGRENE 👋</h4>
-           <div id="title" className="md:items-center md:text-center flex flex-col">
+           <div id="title" className="items-center text-center flex flex-col">
           <h1
-            className="text-gray-900 font-bold mt-3 text-[3.1rem] w-[37.5rem] leading-[67.6px] text-left md:w-[24.5rem] md:text-center"
-          >Assistência psicologica simplificada para todos</h1>+  
+            className="text-gray-900 font-bold mt-3 text-[3.1rem] w-[37.5rem] leading-[67.6px] md:w-[24.5rem] text-center"
+          >Assistência psicologica simplificada para todos</h1>
           </div>
           <div
             id="content"
-            className="mt-4 text-gray-700 font-normal text-lg leading-releaxed w-[37.5rem] md:flex md:flex-col md:items-center md:justify-center"
+            className="mt-4 text-gray-700 font-normal text-lg leading-releaxed w-[34.5rem] flex flex-col items-center justify-center"
           >
-            <p className='md:w-[24.5rem] md:text-center'>
+            <p className='md:w-[24.5rem] text-center'>
               Os psicologos vão além dos sintomas para tratar a causa raiz de
               sua doença e proporcionar uma cura a longo prazo.
             </p>
@@ -37,14 +44,14 @@ export function Home() {
       </div>
 
        <div id="col-b">
+       
         <img
-         className="block w-[27rem] max-w-[100%] md:w-[80%] md:ml-4 mt-6"
+         className="block w-[27rem] pt-6 w-[80%] md:w-[80%] md:ml-4 mt-20"
           src="./src/assets/mamae.png"
           alt="Erica Luciana Garcia"
-        />
+        />      
       </div>
     </section>
-    
-  </Element>
+    </Element>
   )
 }

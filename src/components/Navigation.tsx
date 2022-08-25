@@ -10,14 +10,21 @@ interface ScrollProps {
 }
 
 export function Navigation({ valueScrollY }:ScrollProps) {
-
-  
+  let colorLogo1 = 'fill-gray-100'
+  let colorLogo2 = 'fill-gray-100'
+  function tradeColor() {
+    if (valueScrollY > 0) {
+      colorLogo1 = 'fill-black'
+      colorLogo2 = 'fill-blue-700'
+    }
+  }
+  tradeColor()
  return (
-    <header className={`fixed w-full py-2 flex items-center justify-between bg-blue-700 border-b md:bg-local ${valueScrollY > 0 ? "bg-transparent" : ""}`} >
+    <header className={`transition duration-200 fixed w-full py-2 flex items-center justify-between bg-blue-700 border-b md:bg-local ${valueScrollY > 0 ? "bg-transparent border-none" : ""}`} >
       <div className="py-[1.65rem] pl-[7.75rem] text-white click:bb-1 md:flex md:items-center md:justify-between md:gap-[7rem] md:pl-[15%]">
         <div>
         <a href="#Home" className="">
-          <Logo />
+          <Logo colorWord1={colorLogo1} colorWord2={colorLogo2} />
         </a>
         </div>
         <div className="hidden invisible md:visible md:flex">
@@ -32,11 +39,12 @@ export function Navigation({ valueScrollY }:ScrollProps) {
           <li>
             <Link
               activeClass="active"
-              to="home"        
-              className="transition duration-100 pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible "
+              to="home"    
+              className={`transition duration-200 cursor-pointer transition duration-100 pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible ${valueScrollY > 0 ? "text-blue-900 border-blue-900"  : ""}`}
               spy={true} 
               smooth={true} 
               duration={500} 
+              offset={-100}
               >
               Início
             </Link>
@@ -45,7 +53,7 @@ export function Navigation({ valueScrollY }:ScrollProps) {
           <Link
               activeClass="active"
               to="service"        
-              className="transition duration-100 pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible "
+              className={`transition duration-200 cursor-pointer transition duration-100 pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible ${valueScrollY > 0 ? "text-blue-900 border-blue-900"  : ""}`}
               spy={true} 
               smooth={true} 
               duration={500} 
@@ -57,7 +65,7 @@ export function Navigation({ valueScrollY }:ScrollProps) {
           <Link
               activeClass="active"
               to="depoiment"        
-              className="transition duration-100 pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible "
+              className={`transition duration-200 cursor-pointer transition duration-100 pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible ${valueScrollY > 0 ? "text-blue-900 border-blue-900"  : ""}`}
               spy={true} 
               smooth={true} 
               duration={500} 
@@ -69,7 +77,7 @@ export function Navigation({ valueScrollY }:ScrollProps) {
           <Link
               activeClass="active"
               to="sobre"        
-              className="transition duration-100 pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible "
+              className={`transition duration-200 cursor-pointer transition duration-100 pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible ${valueScrollY > 0 ? "text-blue-900 border-blue-900"  : ""}`}
               spy={true} 
               smooth={true} 
               duration={500} 
@@ -77,12 +85,26 @@ export function Navigation({ valueScrollY }:ScrollProps) {
               Sobre
             </Link>
           </li>
+          <li>
+          <Link
+              activeClass="active"
+              to="contato"        
+              className={`transition duration-200 cursor-pointer transition duration-100 pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible ${valueScrollY > 0 ? "text-blue-900 border-blue-900"  : ""}`}
+              spy={true} 
+              smooth={true} 
+              duration={500} 
+              >
+              Contato
+            </Link>
+          </li>
         </ul>
         
       </div>
 
-      <div className="bg-blue-700 text-white border rounded-full fs-[1.8rem] py-2 px-6 fw-700 cursor-pointer text-sm font-bold transtition-colors hover:bg-blue-300 hover:text-blue-700 duration-200 md:invisible">
-        <a href="">AGENDE SUA CONSULTA</a>
+      <div 
+      className={` border rounded-full fs-[1.8rem] py-2 px-6 fw-700 cursor-pointer text-sm font-bold transtition-colors duration-200 md:invisible ${valueScrollY > 0 ? "bg-transparent text-blue-700 border-blue-700 hover:text-gray-100 hover:border-white hover:bg-blue-700"  : "bg-blue-700 text-white hover:bg-blue-300 hover:text-blue-700"}`}
+      >
+        <a href="" >AGENDE SUA CONSULTA</a>
       </div>
       <div>
       

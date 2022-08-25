@@ -1,8 +1,11 @@
-import { EnvelopeSimple, MapPin, WhatsappLogo } from "phosphor-react";
-
+import { ArrowUp, EnvelopeSimple, MapPin, WhatsappLogo } from "phosphor-react";
+import { Element, animateScroll as scroll } from "react-scroll";
 
 export function Contact() {
   return (
+    <Element
+    name="contato"
+    >
     <section id="Contact" className="justify-center flex items-center  gap-36 pt-[8rem] bg-white pb-[160px] md:flex-col">
       <div className="md:flex md:flex-col md:items-center md:justify-center">
         
@@ -29,9 +32,11 @@ export function Contact() {
       <img
         className="block w-[30rem] max-w-[100%] md:w-[80%]"
         src="./src/assets/moreno.png"
-        alt="Doutora Erica Luciana Garcia"
+        alt="Moreno De Moletom Marrom"
       />
     </div>
+    
   </section>
+  </Element>
   )
 }
