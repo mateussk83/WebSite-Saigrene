@@ -1,7 +1,10 @@
 import { CheckCircle } from "phosphor-react";
-
+import { Element } from "react-scroll";
 export function Services() {
   return (
+    <Element
+      name="service"
+    >
     <div className="mb-[8rem]">
       <header className="flex flex-col items-center justify-start ">
         <h4 className="text-[0.875rem] leading-snug text-blue-700 tracking-wide font-bold pt-[8rem]">SERVIÇOS</h4>
@@ -79,5 +82,6 @@ export function Services() {
         </div>
         </div>
     </div>
+    </Element>
   )
 } 

@@ -1,8 +1,13 @@
 import { WhatsappLogo } from 'phosphor-react'
+import { Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 export function Home() {
   return (
-     <section id="home" className="bg-blue-300  justify-center flex items-center md:flex-col">
+    <Element
+    name="service"
+    >
+     <section id="home" className="bg-blue-300 justify-center flex items-center md:flex-col ">
+        
       <div className="pt-20 flex justify-center" id="wrapper">
         <header>
           <h4
@@ -33,11 +38,13 @@ export function Home() {
 
        <div id="col-b">
         <img
-         className="block w-[27rem] max-w-[100%] md:w-[80%] mt-6"
+         className="block w-[27rem] max-w-[100%] md:w-[80%] md:ml-4 mt-6"
           src="./src/assets/mamae.png"
           alt="Erica Luciana Garcia"
         />
       </div>
     </section>
+    
+  </Element>
   )
 }

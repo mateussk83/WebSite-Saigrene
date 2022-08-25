@@ -3,11 +3,11 @@ import { EnvelopeSimple, MapPin, WhatsappLogo } from "phosphor-react";
 
 export function Contact() {
   return (
-    <section id="Contact" className="justify-center flex items-center  gap-36 pt-[8rem] bg-white pb-[160px]">
-      <div className="">
+    <section id="Contact" className="justify-center flex items-center  gap-36 pt-[8rem] bg-white pb-[160px] md:flex-col">
+      <div className="md:flex md:flex-col md:items-center md:justify-center">
         
         <h1
-          className="text-gray-900 font-bold mt-3 text-[2.5rem] w-[27.5rem] leading-[52.08px] text-left"
+          className="text-gray-900 font-bold mt-3 text-[2.5rem] w-[27.5rem] leading-[52.08px] text-left w-[24.5rem] md:text-center"
         >Entre em contato com a gente!</h1>
 
         <div
@@ -25,9 +25,9 @@ export function Contact() {
           </a>
       </div>
     </div>
-    <div id="col-b">
+    <div id="col-b" className="md:items-center md:flex md:justify-center md:items-center">
       <img
-        className="block w-[30rem] max-w-[100%] "
+        className="block w-[30rem] max-w-[100%] md:w-[80%]"
         src="./src/assets/moreno.png"
         alt="Doutora Erica Luciana Garcia"
       />

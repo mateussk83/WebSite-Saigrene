@@ -1,6 +1,6 @@
 import { Person } from "phosphor-react";
 import { useState } from "react";
-
+import { Element } from "react-scroll";
 
 
 export function Depoiments() {
@@ -56,11 +56,9 @@ export function Depoiments() {
       }
     }
   ];
-
-
-
-console.log(pageDepoiment)
   return (
+
+    <Element name="depoiment">
     <div className="bg-white pb-[14rem] md:pb-[8rem]">
       <header className="flex flex-col items-center">
         <h4 className="text-[0.875rem] leading-snug text-blue-700 tracking-wide font-bold pt-[8rem]">DEPOIMENTOS</h4>
@@ -128,5 +126,6 @@ console.log(pageDepoiment)
         <a className={`h-4 w-4  rounded-full duration-200 hover:bg-blue-700 ${pageDepoiment == 2 ? "bg-blue-700" : 'bg-blue-200'}`} onClick={() => {setpageDepoiment(2)}}></a>
       </div>
     </div>
+    </Element>
   )
 }

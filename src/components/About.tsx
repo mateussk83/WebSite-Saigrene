@@ -1,7 +1,9 @@
 import { WhatsappLogo } from "phosphor-react";
+import { Element } from "react-scroll";
 
 export function About() {
   return (
+    <Element name="sobre">
     <section id="home" className="pt-[8rem] mb-[160px]">
       <div className="flex justify-center items-center gap-16 md:flex-col md:text-center">
       <div id="col-a" className="flex justify-center items-center">
@@ -21,7 +23,7 @@ export function About() {
         <h1
           className="text-gray-900 font-bold mt-3 text-[2.5rem] w-[30.5rem] md:w-[24.5rem] leading-[52.08px] md:text-center"
         >Entenda quem somos e por que existimos</h1>
-          <span className="mt-4 text-gray-700 font-normal text-lg leading-releaxed w-[37.5rem] md:w-[24.5rem] ">
+          <span className="mt-4 text-gray-700 font-normal text-lg leading-releaxed w-[37.5rem] md:w-[23.5rem] ">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi voluptatibus rerum officiis, provident reiciendis laboriosam laborum eos voluptatum autem dolorem atque tempora. Ad corporis et aut minima! Quo, reiciendis ipsum.
             lorem
           </span>
@@ -35,5 +37,6 @@ export function About() {
       </div>
       </div>
     </section>
+    </Element>
   )
 }
