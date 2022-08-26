@@ -5,8 +5,8 @@ export function Footer() {
   return (
     <div className="bg-blue-700 flex  justify-between items-center md:hidden">
 
-      <div className="my-20 ml-28 border-none">
-        <Logo />
+      <div className="my-10 ml-28 border-none">
+        <Logo colorWord1="fill-gray-100" colorWord2="fill-gray-100"/>
         <span className="flex items-center text-sm mt-6">©2022 - Instituto Saigrene</span>
         <span className="flex items-center text-sm mt-3"> Todos os direitos reservados.
         </span>
