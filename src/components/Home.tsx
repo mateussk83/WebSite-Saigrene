@@ -10,7 +10,7 @@ export function Home() {
      <div id="col-a">
        
        <img
-        className="w-[27rem] w-[85%] h-[50%] md:w-[80%] md:ml-4 mt-[7.5rem] md:hidden"
+        className="w-[27rem] h-[50%] md:w-[80%] md:ml-4 mt-[7.5rem] md:hidden"
          src="./src/assets/denise.png"
          alt="Erica Luciana Garcia"
        />      

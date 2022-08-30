@@ -21,10 +21,10 @@ export function Navigation({ valueScrollY }:ScrollProps) {
   tradeColor()
  return (
     <header className={`transition duration-200 fixed w-full py-2 flex items-center justify-between bg-blue-700 border-b md:bg-local ${valueScrollY > 0 ? "bg-transparent border-none" : ""}`} >
-      <div className="py-[1.65rem] pl-[7.75rem] text-white click:bb-1 md:flex md:items-center md:justify-between md:gap-[7rem] md:pl-[15%]">
+      <div className="py-[1.65rem] pl-[2rem] text-white click:bb-1 md:flex md:items-center md:justify-between md:gap-[7rem] md:pl-[15%]">
         <div>
         <a href="#Home" className="">
-          <Logo colorWord1={colorLogo1} colorWord2={colorLogo2} />
+          <Logo valueScroll={valueScrollY} />
         </a>
         </div>
         <div className="hidden invisible md:visible md:flex">
