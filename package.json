@@ -11,6 +11,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@types/node": "^18.7.14",
     "@types/react-scroll": "^1.8.4",
     "phosphor-react": "^1.4.1",
     "react": "^18.0.0",
