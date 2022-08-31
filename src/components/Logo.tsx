@@ -1,3 +1,6 @@
+import logoWhite from "../src/assets/logo-white.png"
+import logoPurple from "../src/assets/logo-purple.png"
+
 
 interface colorsProps {
   valueScroll: number;
@@ -7,7 +10,7 @@ export function Logo({ valueScroll }: colorsProps) {
   return (
     <div className="flex items-center justify-center border-none ">
 
-      <img src={`../src/assets/${valueScroll > 0 ? 'logo-purple.png' : 'logo-white.png'}`} className={`w-[5rem] mb-[-2rem] mt-[-2rem]`} alt="" />
+      <img src={`../src/assets/${valueScroll > 0 ? logoPurple : logoWhite}`} className={`w-[5rem] mb-[-2rem] mt-[-2rem]`} alt="" />
 
       {valueScroll == 0
         ?
