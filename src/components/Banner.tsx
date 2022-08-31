@@ -2,7 +2,7 @@ import { WhatsappLogo } from "phosphor-react";
 
 export function Banner() {
   return (
-    <div className=" mt-[-9.6rem] flex bg-blue-700 justify-between items-center mx-[7rem] rounded-2xl md:hidden">
+    <div className="mt-[-9.6rem] flex bg-blue-700 justify-between items-center mx-[7rem] rounded-2xl md:hidden">
       <div>
         <h1 className="text-white font-bold text-[2.5rem] w-[36rem] leading-[3.25rem] text-left py-[6.25rem] pl-[6.25rem]">
           Comece a cuidar de sua saúde agora mesmo

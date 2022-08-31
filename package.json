@@ -2,13 +2,10 @@
   "name": "nlw-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "./",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@types/node": "^18.7.14",

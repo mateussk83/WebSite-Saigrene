@@ -1,9 +1,7 @@
 import { List } from "phosphor-react";
 import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-
-
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 interface ScrollProps {
   valueScrollY: number;

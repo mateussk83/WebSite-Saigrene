@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import { About } from "../components/About";
 import { Banner } from "../components/Banner";
 import { ButtonScrollToTop } from "../components/ButtonScrollToTop";
