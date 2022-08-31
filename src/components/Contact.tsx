@@ -10,7 +10,7 @@ export function Contact() {
         <div className="md:flex md:flex-col md:items-center md:justify-center">
 
           <h1
-            className="text-gray-900 font-bold mt-3 text-[2.5rem] w-[27.5rem] leading-[52.08px] text-left w-[24.5rem] md:text-center"
+            className="text-gray-900 font-bold mt-3 text-[2.5rem] w-[27.5rem] leading-[52.08px] text-left md:text-center"
           >Entre em contato com a gente!</h1>
 
           <div

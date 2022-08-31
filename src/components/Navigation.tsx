@@ -38,7 +38,7 @@ export function Navigation({ valueScrollY }:ScrollProps) {
             <Link
               activeClass="active"
               to="home"    
-              className={`transition duration-200 cursor-pointer transition duration-100 pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible ${valueScrollY > 0 ? "text-blue-900 border-blue-900"  : ""}`}
+              className={`transition duration-200 cursor-pointer pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible ${valueScrollY > 0 ? "text-blue-900 border-blue-900"  : ""}`}
               spy={true} 
               smooth={true} 
               duration={500} 
@@ -51,7 +51,7 @@ export function Navigation({ valueScrollY }:ScrollProps) {
           <Link
               activeClass="active"
               to="service"        
-              className={`transition duration-200 cursor-pointer transition duration-100 pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible ${valueScrollY > 0 ? "text-blue-900 border-blue-900"  : ""}`}
+              className={`transition duration-200 cursor-pointer pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible ${valueScrollY > 0 ? "text-blue-900 border-blue-900"  : ""}`}
               spy={true} 
               smooth={true} 
               duration={500} 
@@ -63,7 +63,7 @@ export function Navigation({ valueScrollY }:ScrollProps) {
           <Link
               activeClass="active"
               to="depoiment"        
-              className={`transition duration-200 cursor-pointer transition duration-100 pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible ${valueScrollY > 0 ? "text-blue-900 border-blue-900"  : ""}`}
+              className={`transition duration-200 cursor-pointer pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible ${valueScrollY > 0 ? "text-blue-900 border-blue-900"  : ""}`}
               spy={true} 
               smooth={true} 
               duration={500} 
@@ -75,7 +75,7 @@ export function Navigation({ valueScrollY }:ScrollProps) {
           <Link
               activeClass="active"
               to="sobre"        
-              className={`transition duration-200 cursor-pointer transition duration-100 pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible ${valueScrollY > 0 ? "text-blue-900 border-blue-900"  : ""}`}
+              className={`transition duration-200 cursor-pointer pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible ${valueScrollY > 0 ? "text-blue-900 border-blue-900"  : ""}`}
               spy={true} 
               smooth={true} 
               duration={500} 
@@ -87,7 +87,7 @@ export function Navigation({ valueScrollY }:ScrollProps) {
           <Link
               activeClass="active"
               to="contato"        
-              className={`transition duration-200 cursor-pointer transition duration-100 pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible ${valueScrollY > 0 ? "text-blue-900 border-blue-900"  : ""}`}
+              className={`transition duration-200 cursor-pointer pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold md:invisible ${valueScrollY > 0 ? "text-blue-900 border-blue-900"  : ""}`}
               spy={true} 
               smooth={true} 
               duration={500} 
