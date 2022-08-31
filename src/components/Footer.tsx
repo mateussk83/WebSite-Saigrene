@@ -9,9 +9,9 @@ export function Footer() {
         <Logo valueScroll={0} />
       </div>
       <div className="flex items-center mr-28 gap-3">
-        <a href="" className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200"><InstagramLogo size={25} color="#fff" /></a>
-        <a href="" className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200"><WhatsappLogo size={25} color="#fff" /></a>
-        <a href="" className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200"><LinkedinLogo size={25} color="#fff" /></a>
+        <a href="#" className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200"><InstagramLogo size={25} color="#fff" /></a>
+        <a href="#" className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200"><WhatsappLogo size={25} color="#fff" /></a>
+        <a href="#" className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200"><LinkedinLogo size={25} color="#fff" /></a>
       </div>
     </div>
   )
