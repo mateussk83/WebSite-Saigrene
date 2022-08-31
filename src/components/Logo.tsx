@@ -4,14 +4,15 @@ import logoWhite from '../assets/logo-white.png';
 
 interface colorsProps {
   valueScroll: number;
+  celphone?: boolean;
 }
 
-export function Logo({ valueScroll }: colorsProps) {
+export function Logo({ valueScroll,celphone }: colorsProps) {
   return (
     <div className="flex items-center justify-center border-none ">
 
       <img 
-        className={`w-[5rem] mb-[-2rem] mt-[-2rem]`} 
+        className={`w-[5rem] ${celphone == true ? 'mb-0 mt-0' : 'mb-[-2rem] mt-[-2rem]' }`} 
         src={valueScroll > 0 ? logoPurple : logoWhite}
         alt="" 
       />

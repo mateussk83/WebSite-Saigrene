@@ -25,7 +25,7 @@ export function Event () {
 
     <div>
       
-      <div id="header"  className="after:content-[''] after:flex after:mb-20" >
+      <div id="header"  className="after:content-[''] after:flex after:mb-20 md:after:mb-0 " >
         <Navigation valueScrollY={scrollY}/>
         </div>
         <div id="content">

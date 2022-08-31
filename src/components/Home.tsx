@@ -9,7 +9,7 @@ export function Home() {
     <Element
       name="inicio"
     >
-      <section id="home" className="mt-[-2rem] bg-blue-300 justify-center flex items-center md:flex-col md:mt-0 ">
+      <section id="home" className="mt-[-2rem] bg-blue-300 justify-center flex items-center md:flex-col md:pt-20 ">
         <div id="col-a">
 
           <img
