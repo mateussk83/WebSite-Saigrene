@@ -1,6 +1,7 @@
 import { WhatsappLogo } from 'phosphor-react'
 import { Element, animateScroll as scroll } from 'react-scroll'
 
+
 export function Home() {
   return (
     <Element

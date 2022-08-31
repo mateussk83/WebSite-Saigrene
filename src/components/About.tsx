@@ -1,7 +1,6 @@
 import { ArrowUp, WhatsappLogo } from "phosphor-react";
 import { Element } from "react-scroll";
 
-import doctor from "../src/assets/happy-doctors.png"
 
 export function About() {
   return (
@@ -11,7 +10,7 @@ export function About() {
           <div id="col-a" className="flex justify-center items-center">
             <img
               className="block w-[27rem] max-w-[100%] md:w-[80%]"
-              src={doctor}
+              src="../src/assets/happy-doctors.png"
               alt="Doutor Feliz"
             />
           </div>
