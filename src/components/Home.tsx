@@ -1,6 +1,8 @@
 import { WhatsappLogo } from 'phosphor-react'
 import { Element, animateScroll as scroll } from 'react-scroll'
 
+import desine from '../assets/denise.png';
+import mamae from '../assets/mamae.png'
 
 export function Home() {
   return (
@@ -12,7 +14,7 @@ export function Home() {
 
           <img
             className="w-[27rem] h-[50%] md:w-[80%] md:ml-4 mt-[7.5rem] md:hidden"
-            src="src/assets/denise.png"
+            src={desine}
             alt="Erica Luciana Garcia"
           />
         </div>
@@ -47,8 +49,8 @@ export function Home() {
         <div id="col-b">
 
           <img
-            className="block w-[27rem] pt-6 md:w-[80%] md:ml-4 mt-20"
-            src="../src/assets/mamae.png"
+            className="block w-[27rem] pt-6 md:w-[80%] md:ml-4 mt-[7.5rem]"
+            src={mamae}
             alt="Erica Luciana Garcia"
           />
         </div>

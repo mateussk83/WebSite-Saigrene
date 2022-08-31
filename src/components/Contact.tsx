@@ -1,7 +1,7 @@
 import { ArrowUp, EnvelopeSimple, MapPin, WhatsappLogo } from "phosphor-react";
 import { Element, animateScroll as scroll } from "react-scroll";
 
-
+import moreno from '../assets/moreno.png';
 
 export function Contact() {
   return (
@@ -33,7 +33,7 @@ export function Contact() {
         <div id="col-b" className=" md:flex md:justify-center md:items-center">
           <img
             className="block w-[30rem] max-w-[100%] md:w-[80%]"
-            src="../src/assets/moreno.png"
+            src={moreno}
             alt="Moreno De Moletom Marrom"
           />
         </div>
