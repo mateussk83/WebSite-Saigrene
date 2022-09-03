@@ -51,7 +51,7 @@ export function Event () {
         <Footer />
         </div>
         <div className={`hidden${disabled == 1 ? 'md:relative' : ''}`}>
-          <Menu/>
+          <Menu numberScrollY={scrollY}/>
         </div>
         </div>
   )

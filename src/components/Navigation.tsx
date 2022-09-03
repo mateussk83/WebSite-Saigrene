@@ -24,7 +24,7 @@ export function Navigation({ valueScrollY, disabledComponent }:ScrollProps) {
 
   tradeColor()
  return (
-    <header className={`transition duration-200 fixed w-full py-2 flex items-center justify-between px-10 bg-blue-700 border-b md:border-none ${valueScrollY > 0 ? "bg-transparent border-none" : ""}`} >
+    <header className={`transition duration-200 fixed w-full py-2 flex items-center justify-between px-10 bg-blue-700 border-b md:border-none md:fixed ${valueScrollY > 0 ? "bg-transparent border-none" : ""}`} >
       <div className="py-[1.65rem] text-white md:hidden md:invisible ">
         <div>
         <a href="#Home" className="">
@@ -107,9 +107,10 @@ export function Navigation({ valueScrollY, disabledComponent }:ScrollProps) {
       
       <div id="celphone"className="hidden md:flex md:items-center md:justify-center md:gap-[12rem] border-none">
         
-        <Logo valueScroll={0} celphone={true} />
+        <Logo valueScroll={valueScrollY} celphone={true} />
         <a onClick={clickDisabledComponent}>
-            <List size={33} weight="bold"/>
+          {valueScrollY > 0 ? <List size={33} weight="bold" color="#5F3DC4"/>
+          : <List size={33} weight="bold" color="#fff"/>}
         </a>
   </div>
         
