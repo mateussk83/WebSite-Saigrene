@@ -6,10 +6,11 @@ import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } f
 interface ScrollProps {
   valueScrollY: number;
   disabledComponent: () => void
+  disabledValue? : number
 }
 
 
-export function Navigation({ valueScrollY, disabledComponent }:ScrollProps) {
+export function Navigation({ valueScrollY, disabledComponent, disabledValue }:ScrollProps) {
   let colorLogo1 = 'fill-gray-100'
   let colorLogo2 = 'fill-gray-100'
   function tradeColor() {
@@ -24,14 +25,14 @@ export function Navigation({ valueScrollY, disabledComponent }:ScrollProps) {
 
   tradeColor()
  return (
-    <header className={`transition duration-200 fixed w-full py-2 flex items-center justify-between px-10 bg-blue-700 border-b md:border-none md:fixed ${valueScrollY > 0 ? "bg-transparent border-none" : ""}`} >
-      <div className="py-[1.65rem] text-white md:hidden md:invisible ">
+    <header>
+      <div className={` fixed py-[1.65rem] text-white md:hidden md:invisible transition duration-200 w-full flex items-center justify-center gap-20 px-10 border-none ${valueScrollY > 0 ? 'bg-none': 'bg-blue-700'} pr-5 `}>
         <div>
+
         <a href="#Home" className="">
           <Logo valueScroll={valueScrollY} />
         </a>
         </div>
-      </div>
       <div className="py-[1.65rem] pr-[1.25rem] md:hidden md:invisible">
         <ul className="gap-10 flex">
           <li>
@@ -102,15 +103,18 @@ export function Navigation({ valueScrollY, disabledComponent }:ScrollProps) {
       className={` border rounded-full fs-[1.8rem] py-2 px-6 fw-700 cursor-pointer text-sm font-bold transtition-colors duration-200 md:hidden md:invisible ${valueScrollY > 0 ? "bg-transparent text-blue-700 border-blue-700 hover:text-gray-100 hover:border-white hover:bg-blue-700"  : "bg-blue-700 text-white hover:bg-blue-300 hover:text-blue-700"}`}
       >
         <a href="" >AGENDE SUA CONSULTA</a>
+        </div>
+        <div>
       </div>
       
       
-      <div id="celphone"className="hidden md:flex md:items-center md:justify-center md:gap-[12rem] border-none">
+      </div>
+      <div id="celphone"className={`w-full py-2 md:flex md:items-center md:justify-between md:gap-[12rem] px-10 bg-blue-700 hidden border-none pb-8`}>
         
-        <Logo valueScroll={valueScrollY} celphone={true} />
+        <Logo valueScroll={0} celphone={true} />
         <a onClick={clickDisabledComponent}>
-          {valueScrollY > 0 ? <List size={33} weight="bold" color="#5F3DC4"/>
-          : <List size={33} weight="bold" color="#fff"/>}
+
+           <List size={33} weight="bold" color="#fff"/>
         </a>
   </div>
         

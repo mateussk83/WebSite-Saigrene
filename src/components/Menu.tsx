@@ -1,3 +1,4 @@
+import { InstagramLogo, LinkedinLogo, WhatsappLogo } from "phosphor-react";
 import { Link } from "react-scroll";
 
 interface MenuProps {
@@ -6,13 +7,13 @@ interface MenuProps {
 export function Menu({numberScrollY}:MenuProps) {
  return (
   
-  <div className="hidden md:w-[100%] md:flex md:h-[100%] bg-blue-700 text-blue-200 pt-20 border-none md:flex-col md:items-center md:justify-center">
-        <ul className="gap-10 flex flex-col items-center justify-center content-center">
+  <div className="hidden md:w-[100%] md:flex md:h-[100%] bg-blue-700 gap-9 text-blue-200 border-none md:flex-col md:items-center md:justify-center">
+        <ul className="gap-9 flex flex-col items-center justify-center content-center">
           <li>
             <Link
               activeClass="active"
               to="home"    
-              className={`transition duration-200 cursor-pointer pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold`}
+              className={`font-sans font-bold text-2xl cursor-pointer`}
               spy={true} 
               smooth={true} 
               duration={500} 
@@ -25,7 +26,7 @@ export function Menu({numberScrollY}:MenuProps) {
           <Link
               activeClass="active"
               to="service"        
-              className={`transition duration-200 cursor-pointer pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold `}
+              className={`font-sans font-bold text-2xl `}
               spy={true} 
               smooth={true} 
               duration={500} 
@@ -37,7 +38,7 @@ export function Menu({numberScrollY}:MenuProps) {
           <Link
               activeClass="active"
               to="depoiment"        
-              className={`transition duration-200 cursor-pointer pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold `}
+              className={`font-sans font-bold text-2xl `}
               spy={true} 
               smooth={true} 
               duration={500} 
@@ -49,7 +50,7 @@ export function Menu({numberScrollY}:MenuProps) {
           <Link
               activeClass="active"
               to="sobre"        
-              className={`transition duration-200 cursor-pointer pb-[2.2rem] hover:font-bold hover:border-b-2 focus:border-b-2 focus:font-bold `}
+              className={`font-sans font-bold text-2xl `}
               spy={true} 
               smooth={true} 
               duration={500} 
@@ -61,7 +62,7 @@ export function Menu({numberScrollY}:MenuProps) {
           <Link
               activeClass="active"
               to="contato"        
-              className={`transition duration-200 cursor-pointer pb-[2.2rem] hover:font-bold focus:font-bold `}
+              className={`font-sans font-bold text-2xl `}
               spy={true} 
               smooth={true} 
               duration={500} 
@@ -71,8 +72,15 @@ export function Menu({numberScrollY}:MenuProps) {
           </li>
         </ul>
        
-        <a href="" className={` border rounded-full fs-[1.8rem] py-2 px-6 fw-700 cursor-pointer text-sm font-bold transtition-colors duration-200 ${numberScrollY == 0 ? "bg-transparent text-blue-700 border-blue-700 hover:text-gray-100 hover:border-white hover:bg-blue-700"  : "bg-blue-700 text-white hover:bg-blue-300 hover:text-blue-700"}`}
+        <a href="" className={` border rounded-full fs-[1.8rem] py-4 px-8 fw-700 cursor-pointer text-sm font-bold text-blue-700 bg-white`}
       >AGENDE SUA CONSULTA</a>
+
+      <div className="flex gap-8 pt-11 pb-[100%]">
+      <a href="#" className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200"><InstagramLogo size={25} color="#fff" /></a>
+      <a href="#" className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200"><WhatsappLogo size={25} color="#fff" /></a>
+      <a href="#" className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200"><LinkedinLogo size={25} color="#fff" /></a>
+     
+      </div>
       </div>
  )
 }

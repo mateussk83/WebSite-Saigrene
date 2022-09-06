@@ -37,8 +37,8 @@ export function Event () {
 
     <div>
       
-      <div id="header"  className="after:content-[''] after:flex after:mb-20 md:after:mb-35 " >
-        <Navigation valueScrollY={scrollY} disabledComponent={handleClickEventDisabled}/>
+      <div id="header"  className="after:content-[''] after:flex after:mb-20 md:after:mb-0 " >
+        <Navigation valueScrollY={scrollY} disabledComponent={handleClickEventDisabled} disabledValue={disabled}/>
         </div>
         <div id="content" className={disabled == 1 ? 'md:hidden' : ''}>
         <Home/>
@@ -50,7 +50,7 @@ export function Event () {
         <ButtonScrollToTop/>
         <Footer />
         </div>
-        <div className={`hidden${disabled == 1 ? 'md:relative' : ''}`}>
+        <div className={`invisible${disabled == 1 ? 'flex' : ''}`}>
           <Menu numberScrollY={scrollY}/>
         </div>
         </div>
